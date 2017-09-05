@@ -30,12 +30,13 @@ app.get('/teams', (req, res) => {
 })
 
 // Get player from team + category
-// app.get('/teamcategory', (req, res) => {
-//   let team = 'Red Devils' //req.body.team
-//   let category = 'U20' // req.body.category
-//   let sqlReq = "SELECT * FROM t_players INNER JOIN t_teams ON t_players.player_team = t_teams.team_id INNER JOIN t_category ON t_players.player_category = t_category.category_id WHERE t_teams.team_name = " + team + " AND t_category.category_name = " + category +";"
-//   con.query(sqlReq, function (err, result) {
-//     if (err) throw err
-//     res.send(result)
-//   })
-// })
+app.get('/teamcategory', (req, res) => {
+  let team = 'Red Devils' //req.body.team
+  let category = 'U20' // req.body.category
+  let sqlReq = "SELECT * FROM t_players INNER JOIN t_teams ON t_players.player_team = t_teams.team_id INNER JOIN t_category ON t_players.player_category = t_category.category_id WHERE t_teams.team_name = " + con.escape(team) + " AND t_category.category_name = " + con.escape(category) +";"
+
+  con.query(sqlReq, function (err, result) {
+    if (err) throw err
+    res.send(result)
+  })
+})
