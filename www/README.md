@@ -1,4 +1,4 @@
-# reddevils_ui
+# reddevilsui
 
 > A Vue.js project
 
