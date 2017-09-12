@@ -12,6 +12,7 @@ import TeamCard from '@/components/TeamCard'
 export default {
   data () {
     return {
+      title: 'Équipes',
       teams: [
         { id: 1, name: 'Red Devils', town: 'Morges St-Prex', photo: 'static/teams/reddevils.png' },
         { id: 2, name: 'BBC', town: 'Nyon', photo: 'static/teams/reddevils.png' },

@@ -7,7 +7,7 @@
           <a @click="setSelectedPage('teams')">Équipes</a>
         </li>
         <li>
-          <a @click="setSelectedPage('players')">Joueurs<i class="material-icons">assignment_ind</i></a>
+          <a @click="setSelectedPage('players')">Joueurs</a> <!-- <i class="material-icons">assignment_ind</i> -->
         </li>
         <li>
           <a @click="setSelectedPage('games')">Matchs</a>

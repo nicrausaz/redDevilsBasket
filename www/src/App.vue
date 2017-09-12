@@ -4,12 +4,14 @@
     <div class="container">
       <teams v-if="selectedPage == 'teams'"></teams>
     </div>
+    <foot></foot>
   </div>
 </template>
 
 <script>
 import Navbar from './components/Navbar'
 import Teams from './components/Teams'
+import Foot from './components/Foot'
 
 export default {
   name: 'app',
@@ -25,7 +27,8 @@ export default {
   },
   components: {
     Navbar,
-    Teams
+    Teams,
+    Foot
   }
 }
 </script>
