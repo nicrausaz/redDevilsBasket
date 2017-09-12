@@ -7,10 +7,13 @@
           <a @click="setSelectedPage('teams')">Équipes</a>
         </li>
         <li>
-          <a @click="setSelectedPage('players')">Joueurs</a>
+          <a @click="setSelectedPage('players')">Joueurs<i class="material-icons">assignment_ind</i></a>
         </li>
         <li>
           <a @click="setSelectedPage('games')">Matchs</a>
+        </li>
+        <li>
+          <a @click="setSelectedPage('admin')"><i class="material-icons">lock</i></a>
         </li>
       </ul>
     </div>
@@ -32,8 +35,8 @@ export default {
 .nav-wrapper {
   background-color: #dd3333;
 }
+
 img {
   width: 60px;
 }
-
 </style>
