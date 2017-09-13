@@ -1,10 +1,6 @@
 <template>
   <footer class="page-footer">
-    <div class="footer-copyright">
-      <div class="container">
-        {{text}}
-      </div>
-    </div>
+      {{text}}
   </footer>
 </template>
 

@@ -4,8 +4,8 @@
       <team-selector :teams="teams" @setTeam="setTeam"></team-selector>
     </div>
 
-    <div class="col s9">
-      <player-card :players="players"></player-card>
+    <div class="">
+      <player-card :players="teamPlayers"></player-card>
     </div>
   </div>
 </template>
@@ -25,8 +25,12 @@ export default {
         { id: 5, name: 'Red Devils', town: 'Morges St-Prex', photo: 'static/teams/reddevils.png' },
         { id: 6, name: 'Red Devils', town: 'Morges St-Prex', photo: 'static/teams/reddevils.png' }
       ],
-      players: [
-        { id: 1, name: 'Nico', familyname: 'test' }
+      teamPlayers: [
+        { id: 1, name: 'Nicolas', familyName: 'Morges St-Prex', photo: 'static/players/default.png' },
+        { id: 2, name: 'Alec', familyName: 'Bugnon', photo: 'static/players/default.png' },
+        { id: 3, name: 'David', familyName: 'Amstuz', photo: 'static/players/default.png' },
+        { id: 4, name: 'Nicolas', familyName: 'Morges St-Prex', photo: 'static/players/default.png' },
+        { id: 5, name: 'Nicolas', familyName: 'Morges St-Prex', photo: 'static/players/default.png' }
       ],
       selectedTeam: ''
     }

@@ -1,8 +1,8 @@
 <template>
-  <div class="col s2 m2">
-    <div class="card horizontal" v-for="player in players" :key="player.id">
+  <div class="col s2">
+    <div class="card horizontal hoverable" v-for="player in players" :key="player.id">
       <div class="card-image">
-        <img src="static/logo.png">
+        <img :src="player.photo">
       </div>
       <div class="card-stacked">
         <div class="card-content">

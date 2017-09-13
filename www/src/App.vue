@@ -4,8 +4,9 @@
     <div class="content">
       <teams v-if="selectedPage == 'teams'"></teams>
       <players v-if="selectedPage == 'players'"></players>
+      <games v-if="selectedPage == 'games'"></games>      
     </div>
-    <foot></foot>
+    <!-- <foot></foot> -->
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import Navbar from './components/Navbar'
 import Teams from './components/Teams'
 import Foot from './components/Foot'
 import Players from './components/Players'
+import Games from './components/Games'
 
 export default {
   name: 'app',
@@ -31,6 +33,7 @@ export default {
     Navbar,
     Teams,
     Players,
+    Games,
     Foot
   }
 }

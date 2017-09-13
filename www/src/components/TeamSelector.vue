@@ -6,7 +6,7 @@
     <li class="collection-item" v-for="team in teams" :key="team.id">
       <div>{{ team.name }}
         <a class="secondary-content">
-          <i class="material-icons" @click="selectTeam(team)">people</i>
+          <i class="material-icons "@click="selectTeam(team)">people</i>
         </a>
       </div>
     </li>
