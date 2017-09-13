@@ -1,6 +1,6 @@
 <template>
   <div class="row">
-    <div class="col s3" v-for="team in teams" :key="team.id">
+    <div class="col s2" v-for="team in teams" :key="team.id">
       <div class="card card-panel hoverable" @click="openInfos(team)">
         <div class="card-image">
           <img :src="team.photo" draggable="false">

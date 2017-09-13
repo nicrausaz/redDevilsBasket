@@ -1,8 +1,9 @@
 <template>
   <div id="app">
     <Navbar @page="setSelectedPage"></Navbar>
-    <div class="container">
+    <div class="content">
       <teams v-if="selectedPage == 'teams'"></teams>
+      <players v-if="selectedPage == 'players'"></players>
     </div>
     <foot></foot>
   </div>
@@ -12,6 +13,7 @@
 import Navbar from './components/Navbar'
 import Teams from './components/Teams'
 import Foot from './components/Foot'
+import Players from './components/Players'
 
 export default {
   name: 'app',
@@ -28,6 +30,7 @@ export default {
   components: {
     Navbar,
     Teams,
+    Players,
     Foot
   }
 }
@@ -41,7 +44,7 @@ export default {
   text-align: center;
   color: #2c3e50;
 }
-.container {
-  padding-top: 50px;
+.content {
+  padding: 25px;
 }
 </style>
