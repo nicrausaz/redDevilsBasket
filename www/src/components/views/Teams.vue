@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import mobileTeamCard from '@/components/MobileTeamCard'
-import TeamCard from '@/components/TeamCard'
+import mobileTeamCard from '@/components/shared/MobileTeamCard'
+import TeamCard from '@/components/shared/TeamCard'
 
 export default {
   data () {

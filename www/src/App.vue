@@ -11,11 +11,11 @@
 </template>
 
 <script>
-import Navbar from './components/Navbar'
-import Teams from './components/Teams'
-import Foot from './components/Foot'
-import Players from './components/Players'
-import Games from './components/Games'
+import Navbar from './components/shared/Navbar'
+import Teams from './components/views/Teams'
+import Foot from './components/shared/Foot'
+import Players from './components/views/Players'
+import Games from './components/views/Games'
 
 export default {
   name: 'app',

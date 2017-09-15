@@ -11,8 +11,8 @@
 </template>
 
 <script>
-import TeamSelector from '@/components/TeamSelector'
-import PlayerCard from '@/components/PlayerCard'
+import TeamSelector from '@/components/shared/TeamSelector'
+import PlayerCard from '@/components/shared/PlayerCard'
 
 export default {
   data () {
