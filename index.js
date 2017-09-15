@@ -21,6 +21,17 @@ app.listen(3000, function () {
   console.log('Listening...')
 })
 
+//authentificate
+app.get('/auth', (req, res) => {
+  let username = 'nico' //req.body.username
+  let password = '1234' //req.body.password
+  let sqlReq = "SELECT * from t_admins WHERE admin_username = " + con.escape(username) + " && admin_password = " + con.escape(password) + ""
+  con.query(sqlReq, function (err, result) {
+    if (err) throw err
+    res.send(result)
+  })
+})
+
 // get teams
 app.get('/teams', (req, res) => {
   con.query('SELECT * FROM t_teams;', function (err, result) {
